@@ -1,0 +1,210 @@
+html, body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 40px ;
+    background-color: #063970;
+}
+
+.navbar-logo a{
+    flex: 1;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 10px 0;
+    width: 100%;
+    background-image: radial-gradient(lightblue 4%, transparent 50%, #063970 1000%);
+}
+
+.navbar-logo a{
+    text-decoration: none;
+    color: aqua;
+}
+.navbar-menu{
+    flex: 2;
+}
+.navbar-menu-items{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar-menu-items .active{
+    background-image: radial-gradient(lightblue 4%, transparent 80%, #063970 1000%);
+    color: cyan;
+}
+
+.navbar-menu-items li{
+    margin-right: 30px;
+}
+
+.navbar-menu-items li a{
+    text-decoration: none;
+    color: white;
+    flex-wrap: nowrap;
+
+}
+
+.container-top{
+    height: 300px;
+    background: url('../images/blu-diamond-xerium.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.content-body{
+    display: flex;
+    padding: 0 10px;
+    color: white;
+    background-color: #1e81b0;
+}
+
+.content-body .content{
+    flex: 2;
+}
+
+.content-body .sidebar{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.contact-form{
+    background-color: #1e81b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form{
+    border: solid darkblue 2px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-form form .form-control{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bolder;
+}
+
+.contact-form form .form-control input, .contact-form form .form-control textarea{
+    border-radius: 5px;
+    border: lightblue solid 3px;
+    font-size: larger;
+    width: 60%;
+}
+
+
+.contact-form form .form-control input{
+    height: 20px;
+}
+
+.contact-form form .form-control input:focus, .contact-form form .form-control textarea:focus{
+    outline-color: darkcyan;
+}
+
+.contact-form input[type=submit]{
+    width: 100%;
+    background-color: #154c79;
+    border: #063970 solid 2px;
+    border-radius: 10px;
+    color: lightblue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: #063970;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: white 2px 0 4px;
+    color: white;
+}
+
+footer .footer-links{
+    padding: 0 10px;
+    flex: 2;
+}
+
+footer .footer-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-links h5, footer .footer-location h5{
+    font-size: larger;
+}
+
+footer .footer-links ul li{
+    flex: 1 0 25%;
+}
+
+footer .footer-links ul li a{
+    color: white;
+}
+
+footer .footer-location{
+    flex: 1;
+}
+
+@media all and (max-width: 720px) {
+    .content-body{
+        display: block;
+    }
+    .content-body h1{
+        margin-top: 0;
+    }
+    .content-body .sidebar ul{
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
